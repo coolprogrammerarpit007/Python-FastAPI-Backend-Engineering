@@ -11,21 +11,37 @@ zoo_animals.append("Zebra")
 
 
 
-grade = int(input("Enter your marks: "))
+# grade = int(input("Enter your marks: "))
 
 
-if(grade >= 90 and grade <= 100):
-    print("Grade A")
+# if(grade >= 90 and grade <= 100):
+#     print("Grade A")
     
-elif(grade >= 80 and grade <= 89):
-    print("Grade B")
+# elif(grade >= 80 and grade <= 89):
+#     print("Grade B")
     
-elif(grade >= 70 and grade <= 79):
-    print("Grade C")
+# elif(grade >= 70 and grade <= 79):
+#     print("Grade C")
     
-elif(grade >= 60 and grade <= 69):
-    print("Grade D")
+# elif(grade >= 60 and grade <= 69):
+#     print("Grade D")
     
-else:
-    print("Grade: F")
+# else:
+#     print("Grade: F")
     
+
+
+# Loops Assignment 
+
+my_list = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+index = 0
+
+while(index < 3):
+    for day in my_list:
+        if day == "Monday":
+            continue
+        
+        print(f"WeekDay: {day}")
+    print(f"************ WeekDays ***********")
+    index += 1
