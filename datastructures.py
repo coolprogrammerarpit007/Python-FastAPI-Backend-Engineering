@@ -33,15 +33,47 @@ zoo_animals.append("Zebra")
 
 # Loops Assignment 
 
-my_list = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+# my_list = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
-index = 0
+# index = 0
 
-while(index < 3):
-    for day in my_list:
-        if day == "Monday":
-            continue
+# while(index < 3):
+#     for day in my_list:
+#         if day == "Monday":
+#             continue
         
-        print(f"WeekDay: {day}")
-    print(f"************ WeekDays ***********")
-    index += 1
+#         print(f"WeekDay: {day}")
+#     print(f"************ WeekDays ***********")
+#     index += 1
+
+
+
+#  dictionary assignment
+
+my_vehicle = {
+    "model":"Ford",
+    "make":"Explorer",
+    "year":2018,
+    "mileage":40000
+}
+
+# for key,value in my_vehicle.items():
+#     print(f"Vehicle {key}: {value}")
+    
+vehicle2 = my_vehicle.copy()
+vehicle2["number_of_tires"] = 4
+del vehicle2["mileage"]
+# print(vehicle2)
+# print(vehicle2.keys())
+
+# function assignments
+
+def person_info(firstname,lastname,age):
+    return {
+        "user_first_name":firstname,
+        "user_last_name":lastname,
+        "age":age
+    }
+    
+person_details = person_info(lastname="Mishra",firstname="Arpit",age=25)
+print(person_details)
